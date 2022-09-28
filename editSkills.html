@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+
+
+    <!-- start my links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- end my links -->
+
+
+
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/demo_3/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_horizontal-navbar.html -->
+      <div class="horizontal-menu">
+        <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+          <div class="container">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+              <a class="navbar-brand brand-logo" href="index.html"><img  style="width:80px; height:auto" src="images/ninja.png" alt="logo" /></a>
+              <a class="navbar-brand brand-logo-mini" href="index.html"><img  style="width:80px; height:auto" src="images/ninja.png" alt="logo" /></a>
+            </div>
+
+            
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item nav-profile dropdown">
+                  <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="nav-profile-text">
+                      <p class="text-black">David Greymaax</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                    <a class="dropdown-item" href="#">
+                      <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+                  </div>
+                </li>
+                <li class="nav-item d-none d-lg-flex full-screen-link">
+                  <a class="nav-link">
+                    Profile
+                  </a>
+                </li>
+
+                <li class="nav-item d-none d-lg-flex full-screen-link">
+                    <a class="nav-link">
+                      Manage Coaches
+                    </a>
+                </li>
+
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+                <span class="mdi mdi-menu"></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <nav style="background:#35404C" class="bottom-navbar">
+          <div class="container">
+            <ul class="nav page-navigation">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="mdi mdi-home menu-icon"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="allStudents.html" class="nav-link">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title"> Studens</span>
+                  <i class="menu-arrow"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="studentsWithSkills.html" class="nav-link">
+                  <i class="mdi mdi-clipboard-text menu-icon"></i>
+                  <span class="menu-title">Studens Skills</span>
+                  <i class="menu-arrow"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <i class="mdi mdi-clipboard-text menu-icon"></i>
+                  <span class="menu-title">Classes</span>
+                  <i class="menu-arrow"></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title"> Data table </h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data table</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Ninja : Ahmed maged</h4>
+                <h4 class="card-title text-success">Level : 3</h4>
+                <div class="row">
+                  <div class="col-12 table-responsive">
+                    <table style="text-align: center;" id="order-listing" class="table table2 table-striped ">
+                      <thead >
+                        <tr  class="btn-success">
+                          <th>#</th>
+                          <th>Skill</th>
+                          <th>Progress</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="#">1</td>
+                          <td data-label="Skill">Kung fu</td>
+                          <td data-label="Progress">
+                            <div style="height: 13px;" class="progress">
+                                <div class="progress-bar bg-gradient-info text-black" role="progressbar" style="width: 95%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10"><b>9.5</b></div>
+                            </div>
+                           </td>
+                           <td data-label="Actions" style="padding:10px;" >
+                            <a class="btn badge badge-success " style="width:120px; padding: 8px 7px;">Edit Progress</a>
+                         </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td>
+                            <td data-label="Skill">Karate</td>
+                            <td data-label="Progress">
+                              <div style="height: 13px;" class="progress">
+                                  <div class="progress-bar bg-gradient-info text-black" role="progressbar" style="width: 50%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10"><b>5</b></div>
+                              </div>
+                             </td>
+                             <td data-label="Actions" style="padding:10px;" >
+                              <a class="btn badge badge-success" style="width:120px; padding: 8px 7px;">Edit Progress</a>
+                           </td>
+                          </tr>
+
+                          <tr>
+                            <td data-label="#">3</td>
+                            <td data-label="Skill">Kung fu</td>
+                            <td data-label="Progress">
+                              <div style="height: 13px;" class="progress">
+                                  <div class="progress-bar bg-gradient-info text-black" role="progressbar" style="width: 70%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10"><b>7</b></div>
+                              </div>
+                             </td>
+                             <td data-label="Actions" style="padding:10px;" >
+                              <a  class="btn badge badge-success" style="width:120px; padding: 8px 7px;">Edit Progress</a>
+                           </td>
+                          </tr>
+
+
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="container">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021 . All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+              </div>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/data-table.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
