@@ -41,9 +41,11 @@
         min-width: 100px;
     }
     
-    #attend{
+    .btn-success{
         width: 80px;
     }
+    
+
 
     .table2 tbody tr td #butt2 {
         width: 120px ;
