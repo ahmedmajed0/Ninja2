@@ -40,6 +40,11 @@
     .btn.btn-fw{
         min-width: 100px;
     }
+    
+    #attend{
+        min-width: 80px;
+    }
+
     .table2 tbody tr td #butt2 {
         width: 120px ;
         text-align: center;
